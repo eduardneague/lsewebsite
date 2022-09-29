@@ -1,0 +1,174 @@
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    font-size: 1rem;
+    color: #014085;
+}
+
+.leftNav {
+    height: 100%;
+}
+
+.rightNav {
+    height: 100%;
+}
+
+.navList {
+    height: 100%;
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8vw;
+}
+
+.navLogo {
+    position: absolute;
+    height: 4vw;
+    width: 16vw;
+    margin-top: -1.5vw;
+    background: url("../pics/pics_index/general_pics/icon_logoNav.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.navList li {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.navList a {
+    color: #014085;
+    text-decoration: none;
+    height: 100%;
+    padding: 2rem .5rem;
+    transition: .2s;
+}
+
+.navList a:hover {
+    color: white;
+    background-color:#014085;
+}
+
+.navList a:active {
+    color: rgb(185, 185, 185);
+    background-color:#014085;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 35vw;
+    background: url("../pics/pics_index/general_pics/header_background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.4vw;
+    gap: 1rem;
+}
+
+.mainHeaderLogo {
+    background: url("../pics/pics_index/general_pics/icon_logoLSEwhite.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    width: 20vw;
+}
+
+.mainTitle {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.whiteDivider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 4.5vw;
+    width: 100%;
+    font-style: italic;
+    font-size: 1vw;
+    color: #5A5A5A;
+}
+
+.teamBuilding {
+    background: url("../pics/pics_index/pics_bottomSlider/pic27_bottomSlider.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 35.5vw;
+    width: 100%;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vw;
+    background: url("../pics/pics_index/general_pics/header_background2.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 49.5vw;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    height: 16vw;
+    width: 80%;
+    transition: .2s;
+}
+
+.card:hover {
+    box-shadow: -10px 10px 20px rgb(2, 20, 84);
+}
+
+.cardTextContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    color: #014085;
+}
+
+#firstCardImage {
+    background: url("../pics/pics_index/pics_bottomSlider/pic25_bottomSlider.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100%;
+}
+
+#secondCardImage {
+    background: url("../pics/pics_index/pics_bottomSlider/pic7_bottomSlider.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100%;
+}
+
+.cardTitle {
+    font-size: 1.8vw;
+    font-weight: 600;
+    justify-self: flex-start;
+}
+
+.cardText {
+    font-size: 1vw;
+    line-height: 1.5vw;
+    padding: 1.5vw;
+}
+
+#secondCard {
+    justify-content: flex-end;
+}
+

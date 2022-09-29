@@ -1,0 +1,28 @@
+/* Font Package */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+html {
+    font-size: 16px;
+    font-family: "Montserrat";
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #014085;
+  }
+  
+  ::selection {
+    color: white;
+    background: #014085;
+  }
