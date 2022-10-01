@@ -1,34 +1,39 @@
 .navigationBar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+    width: 100%;
     background-color: white;
     font-size: 1rem;
     color: #0C53A0;
+    height: 4rem;
 }
 
 .leftNav {
+    margin-left: 2rem;
     height: 100%;
+    width: 20%;
 }
 
 .rightNav {
+    margin-right: 2rem;
+    display: flex;
+    flex-shrink: 1;
+    width: 80%;
     height: 100%;
 }
 
 .navList {
-    height: 100%;
-    width: 50vw;
     display: flex;
-    justify-content: space-between;
-    font-size: .8vw;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
 }
 
 .navLogo {
-    position: absolute;
-    height: 4vw;
-    width: 16vw;
-    margin-top: -1.5vw;
+    height: 100%;
+    width: 17rem;
+    margin-top: .27rem;
     background: url("../pics/pics_index/general_pics/icon_logoNav.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -43,7 +48,7 @@
     color: #0C53A0;
     text-decoration: none;
     height: 100%;
-    padding: 2rem .5rem;
+    padding: 1.45rem .5rem;
     transition: .2s;
 }
 
@@ -62,12 +67,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 35vw;
+    height: 35rem;
     background: url("../pics/pics_index/general_pics/header_background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: white;
-    font-size: 1.4vw;
+    font-size: 1.6rem;
     gap: 1rem;
 }
 
@@ -76,7 +81,7 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     aspect-ratio: 1;
-    width: 20vw;
+    width: 20rem;
 }
 
 .mainTitle {
@@ -89,10 +94,10 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 4.5vw;
+    height: 5rem;
     width: 100%;
     font-style: italic;
-    font-size: 1vw;
+    font-size: 1.2rem;
     color: #5A5A5A;
 }
 
@@ -100,8 +105,8 @@
     background: url("../pics/pics_index/pics_bottomSlider/pic27_bottomSlider.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 35.5vw;
     width: 100%;
+    height: 36vw;
 }
 
 .information {
@@ -109,11 +114,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4vw;
+    gap: 4rem;
     background: url("../pics/pics_index/general_pics/header_background2.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 49.5vw;
+    height: 50vw;
     width: 100%;
 }
 
@@ -157,15 +162,21 @@
 }
 
 .cardTitle {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     font-weight: 600;
-    justify-self: flex-start;
 }
 
 .cardText {
     font-size: 1vw;
-    line-height: 1.5vw;
-    padding: 1.5vw;
+    line-height: 1.6vw;
+    padding: 1vw;
+}
+
+.readMore {
+    color: #0C53A0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
 }
 
 #secondCard {
@@ -176,10 +187,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1vw;
     align-items: center;
     width: 100%;
-    height: 50rem;
+    height: 60rem;
 }
 
 .question {
@@ -190,8 +200,8 @@
 
 .questionLogo {
     aspect-ratio: 1;
-    margin-bottom: 1vw;
-    width: 4vw;
+    margin-bottom: 1rem;
+    width: 5rem;
     background: url("../pics/pics_index/general_pics/icon_logoLSEblue.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,6 +277,111 @@
     background-repeat: no-repeat;
 }
 
+.semibold {
+    font-weight: 600;
+}
 
+.consiliulSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../Design/header_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50rem;
+}
 
+.consiliulCardsFlexWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    height: 35rem;
+    flex-wrap: wrap;
+}
 
+.consilulTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4rem;
+    letter-spacing: .2rem;
+}
+
+.portraitWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    height: 35rem;
+    width: 18rem; 
+    transition: .2s;
+}
+
+.portraitWrapper:hover {
+    box-shadow: -10px 10px 20px rgb(2, 20, 84);
+}
+
+.portraitImageWrapper {
+    background-color: white;
+    width: 100%;
+    height: 70%;
+}
+
+.nameSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5rem;
+    background-color: white;
+    width: 100%;
+    color:#0C53A0;
+    height: 25%;
+}
+
+.profession {
+    letter-spacing: .1rem;
+    font-size: 1rem;
+}
+
+.consiliulName {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5rem;
+    background-color: #0C53A0;
+    color:white;
+    width: 100%;
+    height: 25%;
+}
+
+.portraitImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media screen and (max-width: 1600px) {
+    .portraitWrapper {
+        width: 17vw;
+    }
+
+    .contactInfo {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .portraitWrapper {
+        width: 18rem;
+    }
+}
