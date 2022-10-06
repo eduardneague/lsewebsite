@@ -286,7 +286,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("../Design/header_background.jpg");
+    background-color:#0C53A0;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -296,12 +296,13 @@
 .consiliulCardsFlexWrapper {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
     align-items: center;
+    gap: 1.5rem;
     width: 100%;
     height: 35rem;
     flex-wrap: wrap;
 }
+
 
 .consilulTitle {
     font-size: 2rem;
@@ -314,10 +315,10 @@
 .portraitWrapper {
     display: flex;
     flex-direction: column;
-    background-color: red;
     height: 35rem;
     width: 18rem; 
     transition: .2s;
+    border: .2rem solid white;
 }
 
 .portraitWrapper:hover {
@@ -358,6 +359,7 @@
     align-items: center;
     flex-direction: column;
     line-height: 1.5rem;
+    font-size: 1rem;
     background-color: #0C53A0;
     color:white;
     width: 100%;
@@ -370,18 +372,87 @@
     height: auto;
 }
 
+.numbersSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+}
+
+.numbersFlexWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 9rem;
+}
+
+.numbersFlex {
+    color: #0C53A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.numbersTitle {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.numbersSubTitle {
+    font-size: 2.5rem;
+}
+
+.bluetype {
+    background-color:#0C53A0;
+}
+
 @media screen and (max-width: 1600px) {
-    .portraitWrapper {
-        width: 17vw;
+    .consiliulCardsFlexWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        height: 70rem;
     }
 
-    .contactInfo {
-        font-size: 1vw;
+    .consiliulSection {
+        height: 90rem;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .consiliulCardsFlexWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        height: 113rem;
+    }
+
+    .consiliulSection {
+        height: 130rem;
     }
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 650px) {
+    .consiliulCardsFlexWrapper {
+        display: flex;
+        height:  262.5rem;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .consiliulSection {
+        height: 280rem;
+    }
+
     .portraitWrapper {
-        width: 18rem;
+        width: 23rem;
+        height: 50rem;
+    }
+
+    .questionSection {
+        height: 60rem;
     }
 }
