@@ -8,15 +8,20 @@ html {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-  }
+::-webkit-scrollbar {
+  width: 20px;
+}
 
-body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+body::-webkit-scrollbar-track {
+  background: white;
+  border: 3px solid white;        /* color of the tracking area */
+}
 
+body::-webkit-scrollbar-thumb {
+  background-color: #0C53A0;    
+  border: 3px solid white;
+  transition: .2s;
+}
   ::-moz-selection { /* Code for Firefox */
     color: white;
     background: #014085;

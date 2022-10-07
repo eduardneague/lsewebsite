@@ -58,8 +58,8 @@
 }
 
 .navList a:active {
-    color: rgb(185, 185, 185);
-    background-color:#0C53A0;
+    color: white;
+    background-color:#3697fe;
 }
 
 .mainHeader {
@@ -203,6 +203,14 @@
     margin-bottom: 1rem;
     width: 5rem;
     background: url("../pics/pics_index/general_pics/icon_logoLSEblue.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dividerLogo {
+    aspect-ratio: 1;
+    width: 4rem;
+    background: url("../pics/pics_index/general_pics/icon_logoLSEwhite.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -408,6 +416,122 @@
 
 .bluetype {
     background-color:#0C53A0;
+}
+
+.successSection {
+    height: 55rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.successTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0C53A0;
+}
+
+.successWrapper {
+    width: 100%;
+    height: 40rem;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.successCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 0 .2rem #0C53A0;
+    height: 100%;
+    width: 23rem;
+}
+
+.successCardTitle {
+    color: #0C53A0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.successCardDescription {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#0C53A0;
+    text-align: center;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* Acestea trebuiesc schimbate in cazul in care se modifica continutul cardurilor */
+
+#roboButton {
+    margin-top: 6.5rem;
+}
+
+#aleargaButton {
+    margin-top: 3.5rem;
+}
+
+#mobilProButton {
+    margin-top: .5rem;
+}
+
+/**/
+
+#roboChallange {
+    background: url("../pics/pics_index/pics_header/header_robochallange.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: 100%;
+}
+
+#aleargaPentruViata {
+    background: url("../pics/pics_index/pics_header/header_aleargapentruviata.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: 100%;
+}
+
+#mobilPro {
+    background: url("../pics/pics_index/pics_header/header_mobilpro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: 100%;
+}
+
+.successButton {
+    background-color: #0C53A0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.successButton:hover {
+    background-color: white;
+    color:#0C53A0;
+    cursor: pointer;
+    box-shadow: 0 0 0 .2rem #0C53A0;
+}
+
+.successButton:active {
+    background-color: #3697fe;
+    color: white;
 }
 
 @media screen and (max-width: 1600px) {
