@@ -2,10 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
+* {
+  scroll-behavior: smooth;
+}
+
 html {
     font-size: 16px;
     font-family: "Montserrat";
-    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -32,7 +35,38 @@ body::-webkit-scrollbar-thumb {
     background: #014085;
   }
 
-  /*nav bar*/
+/* scroll to top button */
+
+.buttonScrollToTop {
+  position: fixed;
+  background-color:#0C53A0;
+  color: white;
+  border: none;
+  aspect-ratio: 1;
+  width: 3rem;
+  border-radius: 50%;
+  font-size: 1.3rem; 
+  box-shadow: 0 0 0 2px white;
+  top: 93%;
+  left: 96%;
+  transition: .2s;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.showButton {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.buttonScrollToTop:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #0C53A0;
+}
+
+/*nav bar*/
 
   .navigationBar {
     display: flex;
@@ -97,3 +131,100 @@ body::-webkit-scrollbar-thumb {
     color: white;
     background-color:#3697fe;
 }
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 30rem;
+  background-color:#002F63;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerGridWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 60%;
+  height: 40%;
+  margin-left: 4.3rem;
+}
+
+.gridBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1rem;
+  color: white;
+  gap: 1rem;
+  line-height: 2rem;
+}
+
+#footerLogo {
+  width: 3.5rem;
+}
+
+#gridBox1 {
+  margin-left: 7rem;
+  border-right: 1px solid white;
+}
+
+#gridBox2 {
+  margin-left: 2.5rem;
+
+  border-right: 1px solid white;
+}
+
+#gridBox3 {
+  margin-left: 2.5rem;
+  border-right: 1px solid white;
+}
+
+#gridBox4 {
+  margin-left: 2.5rem;
+}
+
+.socialLinks a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  letter-spacing: .3rem;
+}
+
+.gridBox a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: .2s;
+}
+
+.gridBox a:hover {
+  color:#7ebcfd;
+}
+
+.rightsBar {
+  display: flex;
+  border-top: 1px solid white;
+  margin-top: 3rem;
+  width: 50%;
+  min-width: 800px;
+  height: 2rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.leftSideText {
+  margin-top: .5rem;
+  width: 50%;
+  text-align: left;
+}
+
+.rightSideText {
+  margin-top: .5rem;
+  width: 50%;
+  text-align: right;
+}
+

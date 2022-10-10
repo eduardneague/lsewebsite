@@ -6,7 +6,9 @@
     const arrLeft = document.querySelector('.arrow-left');
     const arrRight = document.querySelector('.arrow-right');
 
-    // Slider data
+    // Slider data 
+
+    // ADD IMAGES DOWN HERE!!!!
 
     const images = [
         "pic1_bottomSlider.jpg", 
@@ -45,6 +47,8 @@
         "pic34_bottomSlider.jpg", 
         "pic35_bottomSlider.jpg", 
     ]
+
+    // ADD IMAGES UP HERE!!!
 
     // Slider ID
 
