@@ -31,3 +31,69 @@ body::-webkit-scrollbar-thumb {
     color: white;
     background: #014085;
   }
+
+  /*nav bar*/
+
+  .navigationBar {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    font-size: 1rem;
+    color: #0C53A0;
+    height: 4rem;
+}
+
+.leftNav {
+    margin-left: 2rem;
+    height: 100%;
+    width: 20%;
+}
+
+.rightNav {
+    margin-right: 2rem;
+    display: flex;
+    flex-shrink: 1;
+    width: 80%;
+    height: 100%;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.navLogo {
+    height: 100%;
+    width: 17rem;
+    margin-top: .27rem;
+    background: url("../pics/pics_index/general_pics/icon_logoNav.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.navList li {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.navList a {
+    color: #0C53A0;
+    text-decoration: none;
+    height: 100%;
+    padding: 1.45rem .5rem;
+    transition: .2s;
+}
+
+.navList a:hover {
+    color: white;
+    background-color:#0C53A0;
+}
+
+.navList a:active {
+    color: white;
+    background-color:#3697fe;
+}
