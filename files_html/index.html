@@ -22,6 +22,8 @@
 
         <!-- navigation bar-->
         
+        <!-- Desktop Navigation -->
+
         <div class="navigationBar">
             <div class="leftNav">
             <a href="../files_html/index.html">
@@ -29,7 +31,16 @@
                 </div>
             </a>
             </div>
+
             <div class="rightNav">
+                <input type="checkbox" class = "toggle-menu" id = "mobileCheck">
+                
+                <label for="mobileCheck">
+                    <div class="hamburgerWrapper">
+                        <div class="hamburger"></div>
+                    </div>
+                </label>
+            
                 <ul class = "navList">
                     <li><a href = "../files_html/index.html">ACASĂ</a></li>
                     <li><a href = "../files_html/echipa.html">ECHIPĂ</a></li>
@@ -48,7 +59,7 @@
             </div>
             
             <h1 class = "mainTitle">LIGA STUDENȚILOR ELECTRONIȘTI</h1>
-            <p class = "animate-text">
+            <p class = "animate-text" id = "animate-text">
                 <span>"Mai puternici împreună!"</span>
                 <span>"Amintiri de neuitat!"</span>
                 <span>"Proiecte de succes!"</span>
@@ -414,7 +425,9 @@
         <div class="footerGridWrapper">
 
             <div class="gridBox" id = "gridBox1">
-                <div class="dividerLogo" id = "footerLogo"></div>
+                <div class="dividerLogo" id = "footerLogo">
+                    <a href = "index.html"><div class="dividerLogo" id = "footerLogo"></div></a>
+                </div>
                 
                 <div class="socialLinks">
                     <p>Social Media</p>
