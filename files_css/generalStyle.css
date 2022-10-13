@@ -25,6 +25,13 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid white;
   transition: .2s;
 }
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(6, 60, 146);    
+  border: 3px solid white;
+  transition: .2s;
+}
+
   ::-moz-selection { /* Code for Firefox */
     color: white;
     background: #014085;
@@ -64,6 +71,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   background-color: white;
   color: #0C53A0;
+  box-shadow: 0 0 0 2px #0C53A0;
 }
 
 /*nav bar*/
@@ -305,6 +313,14 @@ body::-webkit-scrollbar-thumb {
   color: white;
   gap: 1rem;
   line-height: 2rem;
+}
+
+.dividerLogo {
+  aspect-ratio: 1;
+  width: 4rem;
+  background: url("../pics/pics_index/general_pics/icon_logoLSEwhite.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #footerLogo {
