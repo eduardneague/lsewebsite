@@ -11,6 +11,10 @@ html {
     font-family: "Montserrat";
 }
 
+body {
+  z-index: -10;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -57,7 +61,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 93%;
   left: 96%;
   transition: .2s;
-  z-index: 100;
+  z-index: 1;
   opacity: 0;
   transform: translateY(100px);
 }
@@ -217,7 +221,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media screen and (max-width: 1140px) {
   .navigationBar {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 2px 0 0 #0C53A0;
   }
 
@@ -272,7 +276,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media screen and (max-width: 650px) {
   .navigationBar {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 2px 0 0 #0C53A0;
   }
 

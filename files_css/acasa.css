@@ -12,7 +12,7 @@
     font-size: 1.6rem;
     gap: 1rem;
     overflow: hidden;
-    z-index: -2;
+    z-index: 1;
 }
 
 .bubbles {
@@ -31,7 +31,7 @@
     0 0 50px #0C53A0,
     0 0 100px #0C53A0;
     animation: animate 15s linear infinite;
-    animation-duration: calc(125s / var(--i));
+    animation-duration: calc(135s / var(--i));
     z-index: -1;
 }
 
@@ -45,10 +45,10 @@
 @keyframes animate {
     0% 
     {
-        transform: translateY(55vh) scale(0);
+        transform: translateY(51vh) scale(0);
     }
     100% {
-        transform: translateY(-10vh) scale(1);
+        transform: translateY(-20vh) scale(1);
     }
 
 }
@@ -133,11 +133,11 @@
     align-items: center;
     flex-direction: column;
     gap: 4rem;
-    background:rgb(6, 12, 46);
+    background-color:rgb(6, 12, 46);
     height: 50rem;
     width: 100%;
     overflow: hidden;
-    z-index: -1;
+    z-index: 1;
 }
 
 .card {
@@ -146,10 +146,11 @@
     height: 18rem;
     width: 75%;
     transition: .2s;
+    overflow: hidden;
 }
 
 .card:hover {
-    box-shadow: -10px 10px 20px rgb(2, 20, 84);
+    box-shadow: -10px 10px 20px rgb(0, 26, 121);
 }
 
 .cardTextContainer {
@@ -159,7 +160,7 @@
     flex-direction: column;
     height: 100%;
     width: 60%;
-    background-color: white;
+    background-color: transparent;
     color: #0C53A0;
 }
 
@@ -169,7 +170,7 @@
 
 #firstCardImage {
     background: url("../pics/pics_index/pics_bottomSlider/pic25_bottomSlider.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
     height: 100%;
@@ -177,7 +178,7 @@
 
 #secondCardImage {
     background: url("../pics/pics_index/pics_bottomSlider/pic7_bottomSlider.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
     height: 100%;
@@ -199,6 +200,11 @@
     text-decoration: none;
     font-weight: 600;
     transition: .2s;
+}
+
+.readMore:hover {
+    cursor: pointer;
+    color:#3697fe;
 }
 
 #secondCard {
@@ -475,6 +481,11 @@
     margin-bottom: 1.5rem;
 }
 
+.card1ReadMore {
+    display: none;
+    margin-top: 1rem;
+}
+
 .successCardDescription {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -633,6 +644,179 @@
         font-size: 1rem;
     }
 }
+
+/* Info Section Stuff*/
+
+@media screen and (max-width: 1685px) {
+    .information {
+        flex-direction: row;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 40%;
+        height: 80%;
+        gap: 0;
+    }
+
+    .cardTextContainer {
+        width: 100%;
+    }
+
+    #firstCardImage {
+        width: 100%;
+    }
+
+    #secondCardImage {
+        width: 100%;
+        height: 85%;
+    }
+
+    #firstCard {
+        margin: 0;
+    }
+
+    #infoBubbles {
+       position: absolute;
+    }
+
+}
+
+@media screen and (max-width: 1522px) {
+    .cardTextContainer {
+        height: 100%;
+    }
+    #firstCardTextContainer {
+        margin-bottom: 0rem;
+    }
+
+    #secondCardImage {
+        height: 72%;
+    }
+}
+
+@media screen and (max-width: 1396px) {
+    #secondCardImage {
+        height: 58%;
+    }
+}
+
+@media screen and (max-width: 1276px) {
+    #secondCardImage {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 1158px) {
+    #secondCardImage {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1091px) {
+    .information {
+        flex-direction: column;
+        height: 100rem;
+    }
+
+    .card {
+        height: 40%;
+        width: 80%;
+    }
+
+    #secondCardImage {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .more {
+        display: none;
+    }
+
+    .card1ReadMore {
+        display: block;
+        text-align: center;
+    }
+
+    .card1ReadMore a {
+        font-weight: 600;
+        text-decoration: none;
+        transition: .2s;
+        color:white;
+        background: #0C53A0;
+        padding: 1rem 6rem;
+        line-height: 4rem;
+    }
+    
+    .card1ReadMore a:hover {
+        cursor: pointer;
+        background:#3697fe;
+    }
+    
+}
+
+@media screen and (max-width: 847px) {
+    #secondCardImage {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    #secondCardImage {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 712px) {
+    #firstCardImage {
+        height: 80%;
+    } 
+
+    .card1ReadMore a {
+        line-height: 4rem;
+    }
+}
+
+@media screen and (max-width: 622px) {
+    #firstCardImage {
+        height: 70%;
+    }
+    .card1ReadMore a {
+        line-height: 6rem;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    #firstCardImage {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #firstCardImage {
+        height: 55%;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    #firstCardImage {
+        height: 35%;
+    }
+
+    .card1ReadMore a {
+        line-height: 8rem;
+        padding: 1rem 5.5rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #firstCardImage {
+        height: 25%;
+    }
+}
+
+/* end of information section stuff */
 
 @media screen and (max-width: 1600px) {
     .consiliulCardsFlexWrapper {
