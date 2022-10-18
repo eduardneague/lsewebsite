@@ -406,6 +406,16 @@
     align-items: center;
     width: 100%;
     height: 20rem;
+    background-size: cover;
+    color:white;
+    position: relative;
+    overflow: hidden;
+    background-color:rgb(6, 12, 46);
+    z-index: 1;
+}
+
+.numbersSection .bubbles {
+    position: absolute;
 }
 
 .numbersFlexWrapper {
@@ -417,7 +427,6 @@
 }
 
 .numbersFlex {
-    color: #0C53A0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -431,7 +440,7 @@
 }
 
 .numbersSubTitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .bluetype {
@@ -817,6 +826,95 @@
 }
 
 /* end of information section stuff */
+
+/*start of number section stuff */
+
+@media screen and (max-width: 1400px) {
+
+.numbersTitle {
+    font-size: 2.5rem;
+}
+
+.numbersSubTitle {
+    font-size: 1.8rem;
+}
+
+}
+
+@media screen and (max-width: 1290px) {
+    .numbersTtile {
+        font-size: 2rem;
+    }
+
+    .numbersSubTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .numbersFlexWrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .numbersSection {
+        height: 35rem;
+    }
+
+    .numbersFlex {
+        flex-direction: row;
+    }
+
+    .numbersTitle {
+        font-size: 3rem;
+    }
+
+    .numbersSubTitle {
+        font-size: 2.5rem;
+    }
+
+    .alumni {
+        margin-left: -7rem;
+    }
+
+    .successProjects {
+        margin-left: 4.5rem;
+    }
+
+    .activityYears {
+        margin-left: .2rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .numbersFlexWrapper {
+        margin-left: -3rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .numbersTitle {
+        font-size: 2.5rem;
+    }
+
+    .numbersSubTitle {
+        font-size: 2rem;
+    }
+
+    .alumni {
+        margin-left: -5.5rem;
+    }
+
+    .successProjects {
+        margin-left: 3.5rem;
+    }
+
+    .activityYears {
+        margin-left: .2rem;
+    }
+}
+
+/* end of number section stuff */
 
 @media screen and (max-width: 1600px) {
     .consiliulCardsFlexWrapper {

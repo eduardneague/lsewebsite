@@ -13,6 +13,7 @@ html {
 
 body {
   z-index: -10;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -58,8 +59,8 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 50%;
   font-size: 1.2rem; 
   box-shadow: 0 0 0 2px white;
-  top: 93%;
-  left: 96%;
+  top: 90%;
+  left: 93%;
   transition: .2s;
   z-index: 1;
   opacity: 0;

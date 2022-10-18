@@ -113,3 +113,44 @@
     }
 
     window.onload = animateText;
+
+    // numbers section count-up animation
+
+    let numbersSection = document.querySelector(".numbersSection");
+    let counters = document.querySelectorAll(".counter");
+    
+    // on scroll
+
+    let counterObserver = new IntersectionObserver((entries, observer) => {
+        let [entry] = entries;
+        if(!entry.isIntersecting) {
+            return;
+        }
+
+        let speed = 20;
+
+        counters.forEach((counter, index) => {
+        const updateCounter = () => {
+            const targetNumber = +counter.dataset.target;
+            const initialNumber = +counter.innerText;
+
+            const incPerCount = targetNumber / speed;
+
+            if(initialNumber < targetNumber) {
+                counter.innerText = Math.ceil(initialNumber + incPerCount);
+                setTimeout(updateCounter, 40);
+            }
+
+        }
+        updateCounter();
+    });
+
+    }, {
+        root: null,
+        threshold: 0.4,
+    });
+
+    counterObserver.observe(numbersSection);
+
+
+ 
