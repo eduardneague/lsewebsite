@@ -814,8 +814,13 @@
     }
 
     .card1ReadMore a {
-        line-height: 8rem;
         padding: 1rem 5.5rem;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .card1ReadMore a {
+        padding: 1rem 5rem;
     }
 }
 
@@ -824,6 +829,7 @@
         height: 25%;
     }
 }
+
 
 /* end of information section stuff */
 
