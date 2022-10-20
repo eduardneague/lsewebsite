@@ -16,8 +16,6 @@ body {
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
   overflow-x: hidden;
 }
 
@@ -64,8 +62,8 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 50%;
   font-size: 1.2rem; 
   box-shadow: 0 0 0 2px white;
-  top: 90%;
-  left: 93%;
+  top: 85%;
+  left: 90%;
   transition: .2s;
   z-index: 1;
   opacity: 0;
@@ -231,6 +229,11 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: 0 2px 0 0 #0C53A0;
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+    width: 20px;
+  }
+
   .hamburger{
     display: block;
   }
@@ -295,7 +298,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*end of navbar*/
 
-/* Footer */
+/* start of Footer */
 
 .footer {
   width: 100%;
@@ -312,7 +315,6 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-columns: repeat(4, 1fr);
   width: 60%;
   height: 40%;
-  margin-left: 4.3rem;
 }
 
 .gridBox {
@@ -344,7 +346,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 #gridBox2 {
   margin-left: 2.5rem;
-
   border-right: 1px solid white;
 }
 
@@ -380,7 +381,6 @@ body::-webkit-scrollbar-thumb:hover {
   border-top: 1px solid white;
   margin-top: 3rem;
   width: 50%;
-  min-width: 800px;
   height: 2rem;
   color: white;
   font-size: 1rem;
@@ -399,3 +399,121 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: right;
 }
 
+@media screen and (max-width: 1690px) {
+  .footerGridWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 60%;
+    height: 30rem;
+    margin-left: 12rem;
+  }
+
+  .footer {
+    height: 45rem;
+  }
+
+  .gridBox {
+    width: 60%;
+  }
+
+  #gridBox3 {
+    margin-left: 7rem;
+  }
+  #gridBox2 {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .rightsBar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightSideText {
+    text-align: center;
+    margin-top: .7rem;
+    width: 200%;
+  }
+
+  .leftSideText {
+    width: 200%;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+}
+
+@media screen and (max-width: 1437px) {
+  .footerGridWrapper {
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (max-width: 1321px) {
+  .footerGridWrapper {
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (max-width: 1226px) {
+  .footerGridWrapper {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .footerGridWrapper {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .footerGridWrapper {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 908px) {
+  .footerGridWrapper {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .footerGridWrapper {
+    margin-left: 0;
+  }
+
+  .gridBox {
+    min-width: 5rem;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .footerGridWrapper {
+    margin-left: -1rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .footerGridWrapper {
+    margin-left: 2.8rem;
+    min-width: 40rem;
+  }
+
+  #gridBox1 {
+    margin-right: 6rem;
+  }
+
+  .rightsBar {
+    min-width: 25rem;
+  }
+
+}
+
+
+
+/* end of Footer */

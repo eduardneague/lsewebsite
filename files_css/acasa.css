@@ -50,7 +50,36 @@
     100% {
         transform: translateY(-20vh) scale(1);
     }
+}
 
+@keyframes animate2 {
+    0% 
+    {
+        transform: translateY(80vh) scale(0);
+    }
+    100% {
+        transform: translateY(-40vh) scale(1);
+    }
+}
+
+@keyframes animate3 {
+    0% 
+    {
+        transform: translateY(20vh) scale(0);
+    }
+    100% {
+        transform: translateY(-40vh) scale(1);
+    }
+}
+
+.information .bubbles span {
+    animation: animate2 15s linear infinite;
+    animation-duration: calc(180s / var(--i));
+}
+
+.numbersSection .bubbles span {
+    animation: animate3 15s linear infinite;
+    animation-duration: calc(135s / var(--i));
 }
 
 .mainHeaderLogo {
@@ -237,6 +266,7 @@
 
 .accordion {
     width: 50%;
+    min-width: 25rem;
     overflow: hidden;
     background:white;
     padding: 1rem;
@@ -450,14 +480,14 @@
 .successSection {
     height: 55rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
+    display: block;
     gap: 4rem;
 }
 
 .successTitle {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     font-size: 2rem;
     font-weight: 600;
     color: #0C53A0;
@@ -523,22 +553,21 @@
     background: url("../pics/pics_index/pics_header/header_robochallange.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 20rem;
-    width: 100%;
 }
 
 #aleargaPentruViata {
     background: url("../pics/pics_index/pics_header/header_aleargapentruviata.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 20rem;
-    width: 100%;
 }
 
 #mobilPro {
     background: url("../pics/pics_index/pics_header/header_mobilpro.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.successImageWrapper {
     height: 20rem;
     width: 100%;
 }
@@ -553,6 +582,7 @@
     color: white;
     font-weight: 600;
     font-size: 1rem;
+    text-decoration: none;
     transition: .2s;
 }
 
@@ -735,6 +765,21 @@
 
     #secondCardImage {
         height: 100%;
+    }
+
+    @keyframes animate2 {
+        0% 
+        {
+            transform: translateY(80vh) scale(0);
+        }
+        100% {
+            transform: translateY(-80vh) scale(1);
+        }
+    }
+
+    .information .bubbles span {
+        animation: animate2 15s linear infinite;
+        animation-duration: calc(250s / var(--i));
     }
 }
 
@@ -922,6 +967,8 @@
 
 /* end of number section stuff */
 
+/*start of consiliul stuff*/
+
 @media screen and (max-width: 1600px) {
     .consiliulCardsFlexWrapper {
         display: grid;
@@ -983,3 +1030,157 @@
         font-size: 1.5rem;
     }
 }
+
+/* end of consiliul stuff */
+
+
+/* start of question accordion stuff */
+
+@media screen and (max-width: 1041px) {
+    .questionSection {
+        height: 70rem;
+    }
+} 
+
+/* end of question accordion stuff */
+
+/* start of success projects section */
+
+@media screen and (max-width: 1300px) {
+
+    .successSection {
+        height: 160rem;
+    }
+
+    .successWrapper {
+        flex-wrap: wrap;
+    }
+
+    .successCardTitle {
+        font-size: 3rem;
+        margin-left: 1.5rem;
+    }
+
+    .successCardDescription {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    .successButton {
+        height: 13rem;
+        font-size: 1.5rem;
+    }
+
+    .successCard {
+        width: 90%;
+    }
+
+    #mobilPro {
+        background-position: 1%;
+    }
+
+    #roboChallange {
+        background-position: 5% 50%;
+    }
+
+    #aleargaPentruViata {
+        background-position: 5% 43%;
+    }
+
+    .successImageWrapper {
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .successWrapper {
+        flex-wrap: wrap;
+    }
+
+    .successSection {
+        height: 170rem;
+    }
+    
+    .successCardTitle {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .successCard {
+        align-items: center;
+    }
+
+    .successCardDescription {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    .successButton {
+        height: 13rem;
+        font-size: 1.5rem;
+    }
+
+    #mobilProCard {
+        width: 80%;
+        height: 50rem;
+    }
+
+    #mobilPro {
+        background-position: 1%;
+    }
+
+    #roboChallangeCard {
+        width: 80%;
+        height: 50rem;
+    }
+
+    #roboChallange {
+        background-position: 5% 42%;
+    }
+
+    #aleargaPentruViataCard {
+        width: 80%;
+        height: 50rem;
+    }
+
+    #aleargaPentruViata {
+        background-position: 5% 70%;
+    }
+
+    .successImageWrapper {
+        height: 100%;
+    }
+}
+
+/* end of success projects section */
+
+/* start of studentia section */
+
+@media screen and (max-width: 770px) {
+    .studentiaSection h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+} 
+
+@media screen and (max-width: 625px) {
+    .studentiaSection h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+} 
+
+@media screen and (max-width: 530px) {
+    .studentiaSection h1 {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+
+} 
+
+/* end of studentia section */

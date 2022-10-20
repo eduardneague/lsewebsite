@@ -57,7 +57,7 @@
     // Slider Function
     const slide = (id) => {
         slider.style.backgroundImage = `url(../pics/pics_index/pics_bottomSlider/${images[id]})`;
-        slider-classList.add('image-fade');
+        slider.classList.add('image-fade');
 
         setTimeout(() => {
             slider.classList.remove('image-fade');

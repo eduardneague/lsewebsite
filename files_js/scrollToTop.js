@@ -3,9 +3,9 @@ const rootElement = document.documentElement;
 
 const handleScroll = () => {
     const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-
-    if ((rootElement.scrollTop / scrollTotal ) > 0.80 ) 
-    {
+  
+      if ((rootElement.scrollTop / scrollTotal ) > 0.80 ) 
+      {
         // Show button
         buttonScrollToTop.classList.add("showButton");
       } else 
@@ -19,7 +19,6 @@ const scrollToTop = () => {
     rootElement.scrollTo({
         top: 0,
         left: 0,
-        behavior: "smooth"
     });
 }
 
