@@ -1,0 +1,410 @@
+/* start of consilul executiv section */
+
+.consiliulSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#0C53A0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50rem;
+}
+
+.consiliulCardsFlexWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    height: 35rem;
+    flex-wrap: wrap;
+}
+
+
+.consilulTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4rem;
+    letter-spacing: .2rem;
+}
+
+.portraitWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    width: 18rem; 
+    transition: .2s;
+    box-shadow: 0 0 0 .2rem white;
+}
+
+.portraitWrapper:hover {
+    box-shadow: 0 0 0 .2rem white, -10px 10px 20px rgb(2, 20, 84);
+}
+
+.portraitImageWrapper {
+    background-color: white;
+    width: 100%;
+    height: 70%;
+}
+
+.nameSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5rem;
+    background-color: white;
+    width: 100%;
+    color:#0C53A0;
+    height: 25%;
+}
+
+.profession {
+    letter-spacing: .1rem;
+    font-size: 1rem;
+}
+
+.consiliulName {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    background-color: #0C53A0;
+    color:white;
+    width: 100%;
+    height: 25%;
+}
+
+.nameSection {
+    height: 100%;
+}
+
+.portraitImage {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* end of consilul executiv section */
+
+/* start of consilieri de an section */
+
+.consilieriGridWrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: 1fr 1fr;
+    height: 80%;
+}
+
+.consilieriSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90rem;
+    background: #0C53A0;
+}
+
+.consilieriTitle {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.consilieriPortrait {
+    box-shadow: 0 0 0 .2rem white
+}
+
+.consilieriPortrait:hover {
+    box-shadow: 0 0 0 .2rem white, -10px 10px 20px rgb(2, 20, 84);;
+}
+
+.consilieriPortrait .contactInfo {
+    box-shadow: 0 0 0 1px #0C53A0;
+}
+
+@media screen and (max-width: 1600px) {
+    .consilieriSection {
+        height: 130rem;
+    }
+
+    .consilieriGridWrapper {
+        height: 110rem;
+        grid-template-columns: repeat(3, 300px);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .consilieriSection {
+        height: 195rem;
+    }
+
+    .consilieriGridWrapper {
+        height: 180rem;
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media screen and (max-widtH: 650px) {
+    .consilieriSection {
+        height: 490rem;
+    }
+
+    .consilieriGridWrapper {
+        margin-top: 3rem;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* end of consilieri de an section */
+
+/* start of coordonatori section */
+
+.coordonatoriGridWrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 1fr 1fr;
+    height: 80%;
+}
+
+.coordonatoriSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90rem;
+    color: #0C53A0;
+    background: white;
+}
+
+.coordonatoriTitle {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: #0C53A0;
+}
+
+.coordonatoriPortrait {
+    box-shadow: 0 0 0 .2rem #0C53A0
+}
+
+.coordonatoriPortrait:hover {
+    box-shadow: 0 0 0 .2rem #0C53A0, -10px 10px 20px rgb(47, 92, 255, .3);
+}
+
+.coordonatoriPortrait .contactInfo {
+    box-shadow: 0 0 0 1px #0C53A0;
+}
+
+@media screen and (max-width: 1300px) {
+    .coordonatoriSection {
+        height: 130rem;
+    }
+
+    .coordonatoriGridWrapper {
+        height: 110rem;
+        grid-template-columns: repeat(3, 300px);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .coordonatoriSection {
+        height: 160rem;
+    }
+
+    .coordonatoriGridWrapper {
+        height: 145rem;
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media screen and (max-widtH: 650px) {
+    .coordonatoriSection {
+        height: 430rem;
+    }
+
+    .coordonatoriGridWrapper {
+        margin-top: 3rem;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+
+/* end of coordonatori section */
+
+
+/*start of consiliul stuff*/
+
+@media screen and (max-width: 1600px) {
+    .consiliulCardsFlexWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        height: 70rem;
+    }
+
+    .consiliulSection {
+        height: 90rem;
+    }
+
+}
+
+@media screen and (max-width: 1140px) {
+    .mainHeaderLogo {
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .consilulTitle {
+        margin-top: 5rem;
+    }
+
+    .consiliulCardsFlexWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        height: 113rem;
+    }
+
+    .consiliulSection {
+        height: 130rem;
+    }
+
+    .mainHeaderLogo {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .profession {
+        font-size: 1.5rem;
+    }
+
+    .consiliulName {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+
+    .consilulTitle {
+        margin-top: 8rem;
+    }
+
+    .consiliulCardsFlexWrapper {
+        display: flex;
+        height:  262.5rem;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .consiliulSection {
+        height: 280rem;
+    }
+
+    .portraitWrapper {
+        width: 23rem;
+        height: 50rem;
+    }
+
+    .questionSection {
+        height: 60rem;
+    }
+
+    .mainTitle {
+        font-size: 1.5rem;
+    }
+}
+
+/* end of consiliul stuff */
+
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#0C53A0;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0C53A0,
+    0 0 50px #0C53A0,
+    0 0 100px #0C53A0;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(135s / var(--i));
+    z-index: -1;
+}
+
+.bubbles span:nth-child(even) {
+    background:#3697fe;
+    box-shadow: 0 0 0 10px #3697fe,
+    0 0 50px #64afff,
+    0 0 100px #64afff;
+}
+
+@keyframes animate {
+    0% 
+    {
+        transform: translateY(20vh) scale(0);
+    }
+    100% {
+        transform: translateY(-20vh) scale(1);
+    }
+}
+
+.teamHeader {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    background: rgb(6, 12, 46);
+    z-index: 1;
+}
+
+.teamHeader h1 {
+    position: absolute;
+}
+
+@media screen and (max-width: 1140px) {
+    .teamHeader h1 {
+        margin-top: 4rem;
+    }
+
+    .teamHeader {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teamHeader {
+        font-size: 2.5rem;
+    }
+
+}
