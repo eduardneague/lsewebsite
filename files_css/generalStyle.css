@@ -82,6 +82,20 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 0 2px #0C53A0;
 }
 
+@media screen and (max-width: 800px) {
+  .buttonScrollToTop {
+    left: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buttonScrollToTop {
+    top: 70%;
+  }
+}
+
+/* end of scroll to top button */
+
 /*nav bar*/
 
   .navigationBar {
@@ -506,6 +520,14 @@ body::-webkit-scrollbar-thumb:hover {
 
   #gridBox1 {
     margin-right: 6rem;
+  }
+
+  #gridBox2 {
+    margin-left: 4rem;
+  }
+
+  #gridBox4 {
+    margin-left: 4rem;
   }
 
   .rightsBar {

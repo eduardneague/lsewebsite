@@ -599,16 +599,25 @@
 }
 
 
+
+.imageSliderSection {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+}
+
 .image-slider-wrapper {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .image-slider {
-    min-height: 50rem;
+    min-height: 45rem;
     width: 100%;
     height: inherit;
     position: relative;
@@ -1057,14 +1066,14 @@
     }
 
     .successCardTitle {
-        font-size: 3rem;
-        margin-left: 1.5rem;
+        font-size: 2rem;
+        margin-left: 1rem;
     }
 
     .successCardDescription {
         font-size: 1.5rem;
         line-height: 2rem;
-        text-align: left;
+        text-align: center;
     }
 
     .successButton {
@@ -1073,7 +1082,8 @@
     }
 
     .successCard {
-        width: 90%;
+        height: 40rem;
+        width: 50%;
     }
 
     #mobilPro {
@@ -1184,3 +1194,74 @@
 } 
 
 /* end of studentia section */
+
+/* start of image slider section */
+
+@media screen and (max-width: 1540px) {
+
+    .image-slider {
+        min-height: 40rem;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        width: 3rem;
+        position: absolute;
+        background: white;
+        color: #0C53A0;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .arrow-left {
+        left: 2em;
+    }
+
+    .arrow-right {
+        right: 2em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .image-slider {
+        min-height: 25rem;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        position: static;
+        width: 50%;
+        border-radius: 0;
+        height: 10rem;
+        margin-top: 30rem;
+        border: 2px solid #0C53A0;
+        box-shadow: none;
+        background: white;
+        color: #0C53A0;
+        font-size: 2rem;
+    }
+
+    .arrow-left:hover,
+    .arrow-right:hover {
+        position: static;
+        background-color: #0C53A0;
+        color:white;
+        box-shadow: none;
+    }
+
+    .arrow-left {
+        float: left;
+        border-right: none;
+    }
+
+    .arrow-right {
+        float: right;
+    }
+}
+
+
+/* end of image slider section */
+
+
