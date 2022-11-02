@@ -1,0 +1,232 @@
+/* start of Bubble Header stuff */
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#0C53A0;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0C53A0,
+    0 0 50px #0C53A0,
+    0 0 100px #0C53A0;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(135s / var(--i));
+    z-index: -1;
+}
+
+.bubbles span:nth-child(even) {
+    background:#3697fe;
+    box-shadow: 0 0 0 10px #3697fe,
+    0 0 50px #64afff,
+    0 0 100px #64afff;
+}
+
+@keyframes animate {
+    0% 
+    {
+        transform: translateY(20vh) scale(0);
+    }
+    100% {
+        transform: translateY(-20vh) scale(1);
+    }
+}
+
+.teamHeader {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    background: rgb(6, 12, 46);
+    z-index: 1;
+}
+
+.teamHeader h1 {
+    position: absolute;
+}
+
+@media screen and (max-width: 1140px) {
+    .teamHeader h1 {
+        margin-top: 4rem;
+    }
+
+    .teamHeader {
+        height: 20rem;
+    }
+}
+
+
+/* end of Bubble Header stuff */
+
+/* start of help text */
+
+.helpText {
+    font-size: 1.5rem;
+    color:#0C53A0;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+#helpText2 {
+    margin-bottom: 4rem;
+}
+
+#helpText1 {
+    margin-top: 5rem;
+    font-weight: 600;
+}
+
+/* end of help text */
+
+/* start of accordion */
+
+.questionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 75rem;
+}
+
+.question {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionLogo {
+    aspect-ratio: 1;
+    margin-bottom: 3rem;
+    width: 5rem;
+    background: url("../pics/pics_index/general_pics/icon_logoLSEblue.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.accordion {
+    width: 50%;
+    min-width: 25rem;
+    overflow: hidden;
+    background:white;
+    padding: 1rem;
+}
+
+.accordionLabel, .accordionContent {
+    padding: .5rem, 0;
+}
+
+.accordionLabel {
+    padding: 1rem;
+    display: block;
+    color: #0C53A0;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: background .1s;
+    border: .2rem solid #0C53A0;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+.accordionLabel:hover {
+    background: #0C53A0;
+    color: white;
+}
+
+.accordionLabel::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    right: .5rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: url("../pics/pics_index/general_pics/icon_expandMore.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background 0.4s;
+}
+
+.accordionContent {
+    color:#0C53A0;
+    font-size: 1rem;
+    background: white;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.accordionInput {
+    display: none;
+}
+
+.accordionInput:checked ~ .accordionContent {
+    display: block;
+}
+
+.accordionInput:checked ~ .accordionLabel {
+    background: #0C53A0; 
+    color: white;
+}
+
+.accordionInput:checked ~ .accordionLabel::after {
+    background: url("../pics/pics_index/general_pics/icon_expandLessWhite.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1825px) {
+    .questionSection {
+        height: 90rem;
+    }
+}
+
+@media screen and (max-width: 1247px) {
+    .questionSection {
+        height: 95rem;
+    }
+}
+
+@media screen and (max-width: 1041px) {
+    .questionSection {
+        height: 100rem;
+    }
+}
+
+@media screen and (max-width: 907px) {
+    .questionSection {
+        height: 105rem;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .questionSection {
+        height: 108rem;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    #helpText2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+/* end of accordion */
