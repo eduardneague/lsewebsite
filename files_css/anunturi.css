@@ -1,0 +1,232 @@
+.successTitle {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0C53A0;
+}
+
+.successSection {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.successWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.successCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 0 .2rem #0C53A0;
+    height: 35rem;
+    width: 20rem;
+}
+
+.cardTitleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */ 
+    width: 100%;
+}
+
+.cardDescriptionWrapper {
+    /* background-color: purple; */
+    width: 100%;
+    height: 100%;
+}
+
+.successCardTitle {
+    color: #0C53A0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card1ReadMore {
+    display: none;
+    margin-top: 1rem;
+}
+
+.cardContent {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.successCardDescription {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#0C53A0;
+    text-align: center;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* Acestea trebuiesc schimbate in cazul in care se modifica continutul cardurilor */
+
+#angajatoriDeTopImg {
+    background: url("../pics/pics_anunturi/anunturi_angajatoriDeTop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+}
+
+#anuntCazariImg {
+    background: url("../pics/pics_anunturi/anunturi_info.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 4% 50%;
+}
+
+#inscrieriRoboImg {
+    background: url("../pics/pics_anunturi/anunturi_inscrieriRobo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5% 70%;
+}
+
+.successImageWrapper {
+    background-color: red;
+    height: 15rem;
+    width: 100%;
+}
+
+.successButton {
+    background-color: #0C53A0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.successButton:hover {
+    background-color: white;
+    color:#0C53A0;
+    cursor: pointer;
+    box-shadow: 0 0 0 .2rem #0C53A0;
+}
+
+.successButton:active {
+    background-color: #3697fe;
+    color: white;
+}
+
+
+/* this will need to be changed when more elements are added */
+
+/* start of success projects section */
+
+@media screen and (max-width: 1150px) {
+    .successSection {
+        height: 80rem;
+    }
+    .successWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 727px) {
+    .successSection {
+        height: 120rem;
+    }
+    .successWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* end of success projects section */
+
+
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#0C53A0;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0C53A0,
+    0 0 50px #0C53A0,
+    0 0 100px #0C53A0;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(135s / var(--i));
+    z-index: -1;
+}
+
+.bubbles span:nth-child(even) {
+    background:#3697fe;
+    box-shadow: 0 0 0 10px #3697fe,
+    0 0 50px #64afff,
+    0 0 100px #64afff;
+}
+
+@keyframes animate {
+    0% 
+    {
+        transform: translateY(20vh) scale(0);
+    }
+    100% {
+        transform: translateY(-20vh) scale(1);
+    }
+}
+
+.teamHeader {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    background: rgb(6, 12, 46);
+    z-index: 1;
+}
+
+.teamHeader h1 {
+    position: absolute;
+}
+
+@media screen and (max-width: 1140px) {
+    .teamHeader h1 {
+        margin-top: 4rem;
+    }
+
+    .teamHeader {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teamHeader {
+        font-size: 2.5rem;
+    }
+
+}
