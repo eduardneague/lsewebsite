@@ -1,0 +1,294 @@
+/* start of Bubble Header stuff */
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#0C53A0;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0C53A0,
+    0 0 50px #0C53A0,
+    0 0 100px #0C53A0;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(135s / var(--i));
+    z-index: -1;
+}
+
+.bubbles span:nth-child(even) {
+    background:#3697fe;
+    box-shadow: 0 0 0 10px #3697fe,
+    0 0 50px #64afff,
+    0 0 100px #64afff;
+}
+
+@keyframes animate {
+    0% 
+    {
+        transform: translateY(20vh) scale(0);
+    }
+    100% {
+        transform: translateY(-20vh) scale(1);
+    }
+}
+
+.teamHeader {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    background: rgb(6, 12, 46);
+    z-index: 1;
+}
+
+.teamHeader h1 {
+    position: absolute;
+}
+
+@media screen and (max-width: 1140px) {
+    .teamHeader h1 {
+        margin-top: 4rem;
+    }
+
+    .teamHeader {
+        height: 20rem;
+    }
+}
+
+
+/* end of Bubble Header stuff */
+
+.infoSection {
+    background: white;
+    width: 100%;
+    height: 85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper {
+    background: transparent;
+    width: 70rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ettiLogo {
+    background: url("../pics/pics_facultate/logo_etti.png");
+    background-size: cover;
+    aspect-ratio: 1;
+    height: 7rem;
+    width: 7rem;
+    margin-top: 3rem;
+    align-self: center;
+}
+
+.infoSectionTitle {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color:#0C53A0;
+    line-height: 2.5rem;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.sectionDescription p {
+    color:#0C53A0;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+.outerList {
+    color:#0C53A0;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    list-style-type: square;
+    margin-left: 1.2rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.outerInnerList {
+    list-style-type: square;
+    margin-left: 3rem;
+}
+
+.innerList {
+    margin-left: 3rem;
+    list-style-type: square;
+}
+
+.listElement {
+    margin-left: 3rem;
+}
+
+.conducereSection {
+    background:rgb(6, 12, 46);
+    width: 100%;
+    height: 30rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper h1 {
+    color: white;
+}
+
+.conducereListElement {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.conducereSectionTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.conducereList {
+    margin-left: 5rem;
+}
+
+#conducereContentWrapper {
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .contentWrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 902px) {
+    .infoSection {
+        height: 90rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .infoSection {
+        height: 95rem;
+    }
+}
+
+@media screen and (max-width: 709px) {
+    .infoSection {
+        height: 100rem;
+    }
+}
+
+@media screen and (max-width: 652px) {
+    .infoSection {
+        height: 105rem;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .conducereSectionTitle {
+        font-size: 2rem;
+    }
+
+    .conducereList {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 573px) {
+    .infoSection {
+        height: 110rem;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .infoSection {
+        height: 113rem;
+    }
+}
+
+@media screen and (max-width: 561px) {
+    .infoSection {
+        height: 117rem;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .infoSection {
+        height: 120rem;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .infoSection {
+        height: 125rem;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .infoSection {
+        height: 130rem;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    .infoSection {
+        height: 135rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .conducereList {
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .conducereList {
+        margin-left: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    .conducereList {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .conducereList {
+        margin-left: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .conducereList {
+        margin-left: 2rem;
+    }
+
+    .conducereSectionTitle {
+        font-size: 1.5rem;
+    }
+}
