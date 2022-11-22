@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media screen and (max-width: 600px) {
   .buttonScrollToTop {
-    top: 70%;
+    display: none;
   }
 }
 
