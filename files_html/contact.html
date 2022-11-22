@@ -122,15 +122,15 @@
             <div class = "formContainer">
                 <form onsubmit = "event.preventDefault(); validateForm()">
                     <label for="name">NUME</label>
-                    <input type="text" id = "name" placeholder = "Numele tău"/>
+                    <input name = "nameInput" type="text" id = "name" placeholder = "Numele tău"/>
                     <small class = "error"></small>
 
                     <label for="Email">EMAIL</label>
-                    <input type="text" id = "email" placeholder = "email@mail.com"/>
+                    <input name = "emailInput" type="text" id = "email" placeholder = "email@mail.com"/>
                     <small class = "error"></small>
 
                     <label for="name">MESAJ</label>
-                    <textarea id = "message" placeholder = "Mesajul tău" rows = "6"></textarea>
+                    <textarea name = "messageInput" id = "message" placeholder = "Mesajul tău" rows = "6"></textarea>
                     <small class = "error"></small>
 
                     <div class="center">
