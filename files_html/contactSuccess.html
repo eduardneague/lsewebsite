@@ -14,8 +14,7 @@
 
         <link rel="stylesheet" href="../files_css/reset.css"> <!-- reset -->
         <link rel="stylesheet" href="../files_css/generalStyle.css"> <!-- generalStyle.css -->
-        <link rel="stylesheet" href="../files_css/contact.css"> <!-- contact.css -->
-        <script src="https://kit.fontawesome.com/f7102f8cae.js" crossorigin="anonymous"></script> <!-- font awesome stuff -->
+        <link rel="stylesheet" href="../files_css/contactSuccess.css"> <!-- contact.css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font-awesome icons-->
     </head>
     <body>
@@ -115,85 +114,13 @@
 
             <div class="topPart">
                 <div class="lseLogo"></div>
-                <h2>Ai întrebări sau vrei să ne spui mai multe?</h2>
-                <h1>CONTACTEAZĂ-NE</h1>
-            </div>
+                <h1>MULȚUMIM!</h1>
+                <h2>Mesajul tău a fost înregistrat <br/> cu succes!</h2>
 
-            <div class = "formContainer">
-                <form onsubmit = "event.preventDefault(); validateForm()">
-                    <label for="name">NUME</label>
-                    <input type="text" id = "name" placeholder = "Numele tău"/>
-                    <small class = "error"></small>
-
-                    <label for="Email">EMAIL</label>
-                    <input type="text" id = "email" placeholder = "email@mail.com"/>
-                    <small class = "error"></small>
-
-                    <label for="name">MESAJ</label>
-                    <textarea id = "message" placeholder = "Mesajul tău" rows = "6"></textarea>
-                    <small class = "error"></small>
-
-                    <div class="center">
-                        <input type="submit" value = "TRIMITE">
-                    </div>
-                </form>
+                <a class = "backButton" href = "../files_html/index.html">ACASĂ</a>
             </div>
         </div>
     </div>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.9607416916465!2d26.055142015741694!3d44.43396750960971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201db1231a2df%3A0xb91660c987d390a9!2sLiga%20Studen%C8%9Bilor%20Electroni%C8%99ti!5e0!3m2!1sen!2sro!4v1669140904151!5m2!1sen!2sro" class = "lseMap" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <div class="contactInfoWrapper"> 
-        <div class="contactInfoInnerWrapper">
-
-            <!--SEDIU -->
-
-            <div class="contactCard">
-                <div class="logoWrapper">
-                    <i class = "fa-solid fa-map"></i>
-                </div>
-
-                <h2 class = "contactCardTitle">SEDIU</h2>
-
-                <p class = "contactCardDescription">
-                    Corp A, Cam 228, Bulevardul Iuliu Maniu 1-3, București
-                </p>
-
-            </div>
-
-            <!-- EMAIL -->
-
-            <div class="contactCard">
-                <div class="logoWrapper">
-                    <i class = "fa-solid fa-envelope"></i>
-                </div>
-
-                <h2 class = "contactCardTitle">EMAIL</h2>
-
-                <p class = "contactCardDescription">
-                    contact@lsebucuresti.org
-                </p>
-
-            </div>
-
-              <!-- TELEFON -->
-
-              <div class="contactCard">
-                <div class="logoWrapper">
-                    <i class = "fa-solid fa-phone"></i>
-                </div>
-
-                <h2 class = "contactCardTitle">TELEFON</h2>
-
-                <p class = "contactCardDescription">
-                    0726 505 030
-                </p>
-
-            </div>
-
-        </div>
-    </div>
-
     <!-- footer section -->
 
     <div class="footer">
@@ -247,6 +174,5 @@
 
         <script src = "../files_js/scrollToTop.js"></script>
         <script src = "../files_js/contact.js"></script>
-        
     </body>
 </html>

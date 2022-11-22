@@ -1,0 +1,150 @@
+/* start of Bubble Header stuff */
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#0C53A0;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0C53A0,
+    0 0 50px #0C53A0,
+    0 0 100px #0C53A0;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(135s / var(--i));
+    z-index: -1;
+}
+
+.bubbles span:nth-child(even) {
+    background:#3697fe;
+    box-shadow: 0 0 0 10px #3697fe,
+    0 0 50px #64afff,
+    0 0 100px #64afff;
+}
+
+@keyframes animate {
+    0% 
+    {
+        transform: translateY(20vh) scale(0);
+    }
+    100% {
+        transform: translateY(-20vh) scale(1);
+    }
+}
+
+.teamHeader {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    background: rgb(6, 12, 46);
+    z-index: 1;
+}
+
+.teamHeader h1 {
+    position: absolute;
+}
+
+@media screen and (max-width: 1140px) {
+    .teamHeader h1 {
+        margin-top: 4rem;
+    }
+
+    .teamHeader {
+        height: 20rem;
+    }
+}
+
+/* end of Bubble Header stuff */
+
+.contactSection {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper {
+    width: 70rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /*testing stuff*/
+}
+
+.lseLogo {
+    height: 7rem;
+    aspect-ratio: 1;
+    background: url("../pics/pics_index/general_pics/icon_logoLSEblue.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.topPart {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.topPart h1 {
+    color:#0C53A0;
+    font-weight: 600;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.topPart h2 {
+    color:#0C53A0;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.backButton {
+    background-color:#0C53A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 0 2px #0C53A0 inset;
+    transition: .2s;
+}
+
+.backButton:hover {
+    color: #0C53A0;
+    background-color: white;
+}
+
+@media screen and (max-width: 655px) {
+    .topPart h1 {
+        font-size: 3rem;
+    }
+
+    .topPart h2 {
+        font-size: 1.5rem;
+    }
+}

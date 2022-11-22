@@ -1,0 +1,306 @@
+/* start of Bubble Header stuff */
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#0C53A0;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0C53A0,
+    0 0 50px #0C53A0,
+    0 0 100px #0C53A0;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(135s / var(--i));
+    z-index: -1;
+}
+
+.bubbles span:nth-child(even) {
+    background:#3697fe;
+    box-shadow: 0 0 0 10px #3697fe,
+    0 0 50px #64afff,
+    0 0 100px #64afff;
+}
+
+@keyframes animate {
+    0% 
+    {
+        transform: translateY(20vh) scale(0);
+    }
+    100% {
+        transform: translateY(-20vh) scale(1);
+    }
+}
+
+.teamHeader {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    background: rgb(6, 12, 46);
+    z-index: 1;
+}
+
+.teamHeader h1 {
+    position: absolute;
+}
+
+@media screen and (max-width: 1140px) {
+    .teamHeader h1 {
+        margin-top: 4rem;
+    }
+
+    .teamHeader {
+        height: 20rem;
+    }
+}
+
+/* end of Bubble Header stuff */
+
+.contactSection {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper {
+    width: 70rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent; /*testing stuff*/
+}
+
+.lseLogo {
+    height: 5rem;
+    aspect-ratio: 1;
+    background: url("../pics/pics_index/general_pics/icon_logoLSEblue.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.topPart {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.hamburgerWrapper {
+    margin-top: 0.25rem;
+}
+
+.topPart h1 {
+    color:#0C53A0;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.topPart h2 {
+    color:#0C53A0;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.formContainer {
+    background: transparent;
+    width: 80%;
+    height: 40rem;
+}
+
+label {
+    display: block;
+    margin: .9rem 0;
+    color:#0C53A0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+input, textarea {
+    width: 100%;
+    padding: .6rem;
+    padding-left: 0;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #979797;
+    color: #0C53A0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    transition: .2s;
+    font-family: "Montserrat";
+}
+
+input[type = "text"]:focus, textarea:focus {
+    border-bottom: 1px solid #0C53A0;
+}
+
+textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color:#0C53A0;
+}
+
+.center {
+    text-align: center;
+}
+
+input[type = "submit"] {
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+    max-width: 30rem;
+    background-color: #0C53A0;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    box-shadow: 0 0 0 2px #0C53A0 inset;
+    transition: .2s;
+}
+
+input[type = "submit"]:hover {
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+    max-width: 30rem;
+    background-color: white;
+    color: #0C53A0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    box-shadow: 0 0 0 2px #0C53A0 inset;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-family: "Montserrat";
+    font-size: 1rem;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+.lseMap {
+    width: 100%;
+    height: 20rem;
+    margin-top: -4.5rem;
+    margin-bottom: -.2rem;
+}
+
+.contactInfoWrapper {
+    background-color:#0C53A0;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfoInnerWrapper {
+    background-color: transparent; /*testy stuff*/
+    width: 70rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contactCard {
+    width: 17rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 0 2px white;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.logoWrapper {
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: white;
+    color:#0C53A0;
+    font-size: 2rem;
+}
+
+.contactCardDescription {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    height: 20%;
+}
+
+.contactCardTitle {
+    height: 10%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1070px) {
+    .contactCard {
+        height: 20vw;
+        width: 25vw;
+    }
+
+    .contactCardDescription {
+        font-size: 1.5vw;
+        line-height: .9rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contactInfoInnerWrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contactInfoWrapper {
+        height: 65rem;
+    }
+
+    .contactInfoInnerWrapper {
+        flex-direction: column;
+    }
+
+    .contactCard {
+        width: 17rem;
+        height: 15rem;
+    }
+
+    .contactCardDescription {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+}
