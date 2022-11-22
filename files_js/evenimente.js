@@ -70,7 +70,7 @@ setInterval(() => {
 
     apvSliderCounter++;
 
-    if(apvSliderCounter > 3) {s
+    if(apvSliderCounter > 3) {
         apvSliderCounter = 1;
     }
 }, 3000);
