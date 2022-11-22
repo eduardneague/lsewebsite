@@ -177,6 +177,13 @@
     background-position: 100% 25%;
 }
 
+#roboSliderImgDesktop {
+    background: url("../pics/pics_evenimente/pics_roboChallange/slider_roboChallange_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 25%;
+}
+
 #mobilProSliderImg {
     background: url("../pics/pics_evenimente/pics_mobilPro/slider_mobilPro_1.jpg");
     background-size: cover;
@@ -185,6 +192,13 @@
 }
 
 #apvSliderImg {
+    background: url("../pics/pics_evenimente/pics_aleargaPentruViata/slider_aleargaPentruViata_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}
+
+#apvSliderImgDesktop {
     background: url("../pics/pics_evenimente/pics_aleargaPentruViata/slider_aleargaPentruViata_1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
