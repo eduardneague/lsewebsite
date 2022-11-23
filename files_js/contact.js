@@ -14,7 +14,7 @@ const validateForm = () => {
     // Name Validation
 
     if(nameInput.value.length < 1) {
-        errorNodes[0].innerText = "Numele nu poate să fi gol!";
+        errorNodes[0].innerText = "Numele nu poate să fie gol!";
         nameInput.classList.add("error-border");
         errorFlag = true;
     }
