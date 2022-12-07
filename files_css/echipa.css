@@ -106,6 +106,11 @@
     height: 80%;
 }
 
+.mobileConsilieriDeAn {
+    display: none;
+    text-align: center;
+}
+
 .consilieriSection {
     display: flex;
     flex-direction: column;
@@ -190,6 +195,11 @@
     height: 90rem;
     color: #0C53A0;
     background: white;
+}
+
+.mobileProfession {
+    display: none;
+    text-align: center;
 }
 
 .coordonatoriTitle {
@@ -295,7 +305,7 @@
 
 @media screen and (max-width: 650px) {
     .profession {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .consiliulName {
@@ -388,6 +398,17 @@
     z-index: 1;
 }
 
+.mobileHeader {
+    display: none;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.mobileConsiliulTitle {
+    display: none;
+    text-align: center;
+}
+
 .teamHeader h1 {
     position: absolute;
 }
@@ -408,3 +429,94 @@
     }
 
 }
+
+/*fixing until 320px*/
+
+/*fixing header stuff*/
+
+@media screen and (max-width: 350px) {
+   .desktopHeader {
+    display: none;
+   }
+
+   .mobileHeader {
+    display: block;
+   }
+}
+
+@media screen and (max-widtH: 450px) {
+    .teamHeader {
+        font-size: 2rem;
+    }
+
+    .consilulTitle {
+        font-size: 1.7rem;
+    }
+}
+
+/*end of fixing header stuff*/
+
+@media screen and (max-widtH: 400px) {
+    .consiliulSection {
+        height: 230rem;
+    }
+
+    .mobileConsiliulTitle {
+        display: block;
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .desktopConsiliulTitle {
+        display: none;
+    }
+
+    .portraitWrapper {
+        width: 80%;
+        height: 40rem;
+    }
+
+    .coordonatoriPortrait {
+        width: 80%;
+        align-self: center;
+    }
+    .mobileProfession {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .desktopProfession {
+        display: none;
+    }
+
+    .coordonatoriSection {
+        height: 350rem;
+    }
+
+    .consilieriPortrait {
+        align-self: center;
+        width: 80%;
+    }
+
+    .consiliulName {
+        text-align: center;
+    }
+
+    .desktopConsilieriDeAn {
+        display: none;
+    }
+
+    .mobileConsilieriDeAn {
+        display: block;
+    }
+
+    .consilieriSection {
+        height: 395rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+}
+
+/*end of fixing until 320px*/

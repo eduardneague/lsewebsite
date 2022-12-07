@@ -53,6 +53,7 @@
     font-size: 1.2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .card1ReadMore {
@@ -154,6 +155,23 @@
     }
 }
 
+
+@media screen and (max-widtH: 370px) {
+    .successCard {
+        width: 85%;
+    }
+
+    .successTitle {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-widtH: 330px) {
+    .successTitle {
+        font-size: 1.4rem;
+    }
+}
+
 /* end of success projects section */
 
 
@@ -228,5 +246,5 @@
     .teamHeader {
         font-size: 2.5rem;
     }
-
 }
+

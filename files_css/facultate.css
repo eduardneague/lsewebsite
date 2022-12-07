@@ -292,3 +292,99 @@
         font-size: 1.5rem;
     }
 }
+
+/*fixing until 320px*/
+
+@media screen and (max-width: 450px) {
+    .conducereList {
+        margin-left: 2rem;
+    }
+
+    .conducereSectionTitle {
+        font-size: 1.5rem;
+    }
+
+    .infoSection {
+        height: 140rem;
+    }
+
+    .conducereSection {
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .infoSection {
+        height: 145rem;
+    }
+
+    .conducereSection {
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .infoSection {
+        height: 150rem;
+    }
+
+    .conducereSection {
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .infoSection {
+        height: 155rem;
+    }
+
+    .conducereSection {
+        height: 45rem;
+    }
+}
+
+.mobileConducerea {
+    display: none;
+    text-align: center;
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 366px) {
+  .desktopConducerea {
+    display: none;
+  }
+
+  .mobileConducerea {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 350px) {
+    .infoSection {
+        height: 160rem;
+    }
+
+    .conducereSection {
+        height: 45rem;
+    }
+}
+
+
+@media screen and (max-width: 324px) {
+    .infoSection {
+        height: 165rem;
+    }
+
+    .conducereSection {
+        height: 45rem;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+   .listElement {
+    margin-left: 0;
+   }
+}
+
+/*end of fixing until 320px*/

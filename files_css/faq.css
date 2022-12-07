@@ -228,5 +228,49 @@
 }
 
 
+/*fixing until 320px*/
+
+@media screen and (max-width: 490px) {
+    #helpText2 {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .accordionLabel::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .accordionLabel::after {
+        display: none;
+    }
+
+    .accordion {
+        min-width: 20rem;
+    }
+    .questionSection {
+        height: 120rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .accordionLabel::after {
+        display: none;
+    }
+
+    .accordion {
+        min-width: 18rem;
+    }
+    .questionSection {
+        height: 125rem;
+    }
+}
+
+
+/*end of fixing until 320px*/
+
 
 /* end of accordion */

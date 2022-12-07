@@ -119,15 +119,17 @@
         </div>
 
         <!-- divider -->
-        <div class="whiteDivider">
+        <div class="whiteDivider ">
+            <p class="mobileP">Bun Venit!</p>
         </div>
 
         <div class="teamBuilding">
         </div>
 
         <!-- divider -->
-        <div class="whiteDivider">
-            <h3 class = "whiteDividerHeading">Liga Studenților Electrioniști - Teambuliding Brașov 2022</h3>
+        <div class="whiteDivider desktopDivider">
+            <h3 class = "whiteDividerHeading desktopDividerHeading">Liga Studenților Electrioniști - Teambuliding Brașov 2022</h3>
+            <h3 class = "mobileDividerHeading">LSE - Teambuliding Brașov 2022</h3>
         </div>
 
         <div class="information section">
@@ -486,60 +488,74 @@
 
         <!-- success projects section -->
 
-        <div class="successSection">
-            <h1 class = "successTitle">PROIECTE DE SUCCES DE-A LUNGUL TIMPULUI</h1>
-
-            <div class="successWrapper">
-
-                <!-- Robochallange -->
-
+        <div class = "successSection">
+            <h1 class="successTitle desktopSucTitle">PROIECTE DE SUCCES DE-ALUNGUL TIMPULUI</h1>
+            <h1 class="successTitle mobileSucTitle">PROIECTE DE SUCCES <br>DE-ALUNGUL TIMPULUI</h1>
+            <div class="flexWrapper">
+                <div class="successWrapper">
+    
+                <!-- RoboChallange -->
+        
                 <div class="successCard" id = "roboChallangeCard">
-                    <div class="successImageWrapper" id = "roboChallange">
+                    <div class="successImageWrapper" id = "roboChallangeImg">
                     </div>
-                    <div class="successCardTitle">ROBOCHALLANGE</div>
-                    <p class = "successCardDescription"> <!-- Daca se modifica continutul, trebuiesc modificate marginile de la buton! -->
-                        Cel mai mare concurs de robotică din 
-                        Romania organizat anual de către LSE.
-                    </p>
-                    <a target = "_blank" href = "http://www.robochallenge.ro/ro" class="successButton" id = "roboButton"> <!-- Adica cele de aici prin ID -->
+                    <div class="cardContent">
+                        <div class="cardTitleWrapper">
+                             <div class="successCardTitle">ROBOCHALLANGE</div>
+                    </div>
+                    <div class="cardDescriptionWrapper">
+                        <p class = "successCardDescription"> 
+                            Cel mai mare concurs de robotică din Romania organizat anual de către LSE.
+                        </p>
+                </div>
+                </div>
+                    <a target = "_blank" href = "http://www.robochallenge.ro/ro" class="successButton" id = "angajatoriDeTopButton"> 
                         <p class = "successButtonText">AFLĂ MAI MULTE</p>
                     </a>
                 </div>
-
+    
                 <!-- APV -->
-
+        
                 <div class="successCard" id  = "aleargaPentruViataCard">
-                    <div class="successImageWrapper" id = "aleargaPentruViata">
+                    <div class="successImageWrapper" id = "aleargaPentruViataImg">
                     </div>
-                    <div class="successCardTitle">ALEARGĂ PENTRU VIAȚĂ!</div>
-                    <p class = "successCardDescription"> <!-- Daca se modifica continutul, trebuiesc modificate marginile de la buton! -->
-                        “Aleargă Pentru Viață!” este un cros 
-                        caritabil cu o tradiție de 13 ani, fiind 
-                        cel mai mare eveniment sportiv 
-                        organizat de studenți. 
-                    </p>
-                    <a target = "_blank" href = "https://www.facebook.com/AleargaPentruViata/" class="successButton" id = "aleargaButton"> <!-- Adica cele de aici prin ID -->
+                    <div class="cardContent">
+                        <div class="cardTitleWrapper">
+                             <div class="successCardTitle">ALEARGĂ PENTRU VIAȚĂ!</div>
+                    </div>
+                    <div class="cardDescriptionWrapper">
+                        <p class = "successCardDescription">
+                            “Aleargă Pentru Viață!” este un cros caritabil cu o tradiție de 13 ani, fiind cel mai mare eveniment 
+                            sportiv organizat de studenți. Obiectivul principal vizează strângerea fondurilor necesare pentru o 
+                            cauză umanitară. 
+                        </p> 
+                    </div>
+                </div>
+                    <a target = "_blank" href = "https://www.facebook.com/AleargaPentruViata/" class="successButton" id = "anuntCazariButton"> 
                         <p class = "successButtonText">AFLĂ MAI MULTE</p>
                     </a>
                 </div>
-
-                <!-- MobilPro -->
-
-                <div class="successCard" id = "mobilProCard">
-                    <div class="successImageWrapper" id = "mobilPro">
+    
+                <!-- MobilPRO -->
+        
+                <div class="successCard" id = "moiblProCard">
+                    <div class="successImageWrapper" id = "moiblProImg">
                     </div>
-                    <div class="successCardTitle">MOBILPRO</div>
-                    <p class = "successCardDescription"> <!-- Daca se modifica continutul, trebuiesc modificate marginile de la buton! -->
-                        “MobilPRO - Inovare şi Mobilitate” 
-                        este o competiţie de idei şi aplicaţii 
-                        mobile implementate pe o diversitate 
-                        de terminale cu touchscreen, de la 
-                        smartphones la tablete, şi pe orice 
-                        sistem de operare mobil.
-                    </p>
-                    <a target = "_blank" href = "https://www.facebook.com/mobilproetti/?ref=page_internal" class="successButton" id = "mobilProButton"> <!-- Adica cele de aici prin ID -->
-                        <p class = "successButtonText">AFLĂ MAI MULTE</p>
-                    </a>
+                    <div class="cardContent">
+                        <div class="cardTitleWrapper">
+                            <div class="successCardTitle">MOBILPRO</div>
+                        </div>
+                        <div class="cardDescriptionWrapper">
+                            <p class = "successCardDescription"> 
+                                “MobilPRO - Inovare şi Mobilitate” este o competiţie de idei şi aplicaţii mobile implementate pe o 
+                                diversitate de terminale cu touchscreen, de la smartphones la tablete, şi pe orice sistem de operare mobil.
+                            </p>
+                        </div>
+                    </div>
+                        <a target = "_blank" href = "https://www.facebook.com/mobilproetti/?ref=page_internal" class="successButton" id = "inscrieriRoboButton">
+                            <p class = "successButtonText">AFLĂ MAI MULTE</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -581,7 +597,7 @@
                 </div>
                 
                 <div class="socialLinks">
-                    <p>Liga Studenților Electroniști</p><br>
+                    <p class = "ligaTextFooter">Liga Studenților Electroniști</p><br>
                     <a href="https://www.instagram.com/ligastudentilorelectronistilse/?hl=en" class="fa fa-instagram"></a>  
                     <a href="https://www.facebook.com/lseorgro/" class="fa fa-facebook"></a>  
                     <a href="https://www.linkedin.com/company/ligastudentilorelectronisti/?viewAsMember=true" class="fa fa-linkedin"></a>

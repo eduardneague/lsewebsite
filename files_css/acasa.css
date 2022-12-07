@@ -147,6 +147,10 @@
     font-size: 1.2rem;
 }
 
+.mobileDividerHeading {
+    display: none;
+}
+
 .teamBuilding {
     background: url("../pics/pics_index/pics_bottomSlider/pic27_bottomSlider.jpg");
     background-size: 100% auto;
@@ -477,96 +481,6 @@
     background-color:#0C53A0;
 }
 
-.successSection {
-    height: 55rem;
-    width: 100%;
-    text-align: center;
-    display: block;
-    gap: 4rem;
-}
-
-.successTitle {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #0C53A0;
-}
-
-.successWrapper {
-    width: 100%;
-    height: 40rem;
-    /*background-color: red;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-}
-
-.successCard {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 0 0 .2rem #0C53A0;
-    height: 100%;
-    width: 23rem;
-}
-
-.successCardTitle {
-    color: #0C53A0;
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.card1ReadMore {
-    display: none;
-    margin-top: 1rem;
-}
-
-.successCardDescription {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color:#0C53A0;
-    text-align: center;
-    padding: 0 1.5rem 1.5rem 1.5rem;
-}
-
-/* Acestea trebuiesc schimbate in cazul in care se modifica continutul cardurilor */
-
-#roboButton {
-    margin-top: 6.5rem;
-}
-
-#aleargaButton {
-    margin-top: 3.5rem;
-}
-
-#mobilProButton {
-    margin-top: .5rem;
-}
-
-/**/
-
-#roboChallange {
-    background: url("../pics/pics_index/pics_header/header_robochallange.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#aleargaPentruViata {
-    background: url("../pics/pics_index/pics_header/header_aleargapentruviata.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#mobilPro {
-    background: url("../pics/pics_index/pics_header/header_mobilpro.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .successImageWrapper {
     height: 20rem;
     width: 100%;
@@ -630,6 +544,11 @@
 
 .image-slider * {
     box-sizing: border-box;
+}
+
+.mobileP {
+    display: none;
+    font-style: normal;
 }
 
 .arrow-left,
@@ -913,6 +832,7 @@
 
 @media screen and (max-width: 1240px) {
     .numbersFlexWrapper {
+        width: auto;
         flex-direction: column;
         gap: 3rem;
     }
@@ -966,7 +886,7 @@
     }
 
     .successProjects {
-        margin-left: 3.5rem;
+        margin-left: 3.7rem;
     }
 
     .activityYears {
@@ -1054,119 +974,6 @@
 /* end of question accordion stuff */
 
 /* start of success projects section */
-
-@media screen and (max-width: 1300px) {
-
-    .successSection {
-        height: 160rem;
-    }
-
-    .successWrapper {
-        flex-wrap: wrap;
-    }
-
-    .successCardTitle {
-        font-size: 2rem;
-        margin-left: 1rem;
-    }
-
-    .successCardDescription {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        text-align: center;
-    }
-
-    .successButton {
-        height: 13rem;
-        font-size: 1.5rem;
-    }
-
-    .successCard {
-        height: 40rem;
-        width: 50%;
-    }
-
-    #mobilPro {
-        background-position: 1%;
-    }
-
-    #roboChallange {
-        background-position: 5% 50%;
-    }
-
-    #aleargaPentruViata {
-        background-position: 5% 43%;
-    }
-
-    .successImageWrapper {
-        height: 100%;
-    }
-
-}
-
-@media screen and (max-width: 700px) {
-    .successWrapper {
-        flex-wrap: wrap;
-    }
-
-    .successSection {
-        height: 170rem;
-    }
-    
-    .successCardTitle {
-        font-size: 2rem;
-        margin-left: 0;
-    }
-
-    .successCard {
-        align-items: center;
-    }
-
-    .successCardDescription {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        margin-bottom: 5rem;
-        text-align: center;
-    }
-
-    .successButton {
-        height: 13rem;
-        font-size: 1.5rem;
-    }
-
-    #mobilProCard {
-        width: 80%;
-        height: 50rem;
-    }
-
-    #mobilPro {
-        background-position: 1%;
-    }
-
-    #roboChallangeCard {
-        width: 80%;
-        height: 50rem;
-    }
-
-    #roboChallange {
-        background-position: 5% 42%;
-    }
-
-    #aleargaPentruViataCard {
-        width: 80%;
-        height: 50rem;
-    }
-
-    #aleargaPentruViata {
-        background-position: 5% 70%;
-    }
-
-    .successImageWrapper {
-        height: 100%;
-    }
-}
-
-/* end of success projects section */
 
 /* start of studentia section */
 
@@ -1263,5 +1070,516 @@
 
 
 /* end of image slider section */
+
+
+/* start of fixing until 320px */
+
+
+/*fixing teambuilding and header section*/
+
+@media screen and (max-width: 580px) {
+    .desktopDividerHeading {
+        display: none;
+    }
+    
+    .mobileDividerHeading {
+        display: block;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .desktopDivider {
+        display: none;
+    }
+
+    .teamBuilding {
+        display: none;
+    }
+
+    .mobileP {
+        display: block;
+        font-size: 1.5rem;
+        color:#0C53A0;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .mobileDividerHeading {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .whiteDividerHeading {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .mainTitle {
+        font-size: 1.3rem;
+    }
+
+    .mainHeaderLogo {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .mainTitle {
+        font-size: 1rem;
+    }
+
+    .animate-text {
+        font-size: 1.3rem;
+    }
+}
+
+/*end of fixing teambuilding and header section*/
+
+/*fixing info section*/
+
+@media screen and (max-width: 454px) {
+    .card1ReadMore a{
+        padding: 1rem 3rem;
+    }
+    .information {
+        height: 120rem;
+    }
+
+    #firstCardImage {
+        height: 35%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .card1ReadMore a{
+        padding: 1rem 2rem;
+    }
+
+    .ligaTextFooter {
+        font-size: .8rem;
+    }
+
+    #firstCard {
+        height: 35rem;
+    }
+
+    #secondCard {
+        height: 40rem;
+    }
+
+    .information {
+        height: 90rem;
+    }
+
+
+    #secondCardImage {
+        display: none;
+    }
+
+    #firstCardImage {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 334px) {
+    .card1ReadMore a {
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    #secondCard {
+        height: 45rem;
+    }
+}
+
+@media screen and (max-width: 332px) {
+    .card1ReadMore a {
+        display: none;
+    }
+
+    #firstCard {
+        height: 35rem;
+    }
+}
+
+/*end of fixing info section*/
+
+/*fixing accordion*/
+
+@media screen and (max-width: 858px) {
+    .accordionLabel {
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .accordion {
+        min-width: 20rem;
+    }
+    
+    .accordionLabel::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .accordion {
+        min-width: 17rem;
+    }
+
+    .questionSection {
+        height: 90rem;
+    }
+}
+
+/*end of fixing accordion*/
+
+/*fixing consilul section*/
+
+@media screen and (max-width: 427px) {
+    .consilulTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .portraitWrapper {
+        width: 80%;
+        height: 40rem;
+    }
+
+    .portraitImageWrapper {
+        height: auto;
+    }
+
+    .nameSection {
+        height: 10rem;
+    }
+
+    .contactInfo {
+        height: 15rem;
+    }
+
+    .consiliulCardsFlexWrapper {
+        height: auto;
+    }
+
+    .consiliulSection {
+        height: 225rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contactInfo {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .consilulTitle {
+        font-size: 1.3rem;
+    }
+}
+
+/*end of fixing consiliul section*/
+
+/*fixing numbers section*/
+
+@media screen and (max-width: 466px) {
+    .numbersFlexWrapper {
+        width: auto;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .numbersTitle {
+        font-size: 1.8rem;
+    }
+
+    .numbersSubTitle {
+        font-size: 2rem;
+    }
+
+    .successProjects {
+        margin-left: 4rem;
+    }
+
+    .activityYears {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .numbersTitle {
+        font-size: 1.8rem;
+    }
+
+    .numbersSubTitle {
+        font-size: 1.5rem;
+    }
+
+    .alumni {
+        margin-left: -4rem;
+    }
+
+    .successProjects {
+        margin-left: 3.5rem;
+    }
+
+    .activityYears {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .numbersTitle {
+        font-size: 1.8rem;
+    }
+
+    .numbersSubTitle {
+        font-size: 1.2rem;
+    }
+
+    .alumni {
+        margin-left: -3rem;
+    }
+
+    .successProjects {
+        margin-left: 2.5rem;
+    }
+
+    .activityYears {
+        margin-left: .6rem;
+    }
+}
+
+/*end of fixing numbers section*/
+
+/*fixing success section*/
+
+
+.successSection {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.successWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.successCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 0 .2rem #0C53A0;
+    height: 35rem;
+    width: 20rem;
+}
+
+.cardTitleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */ 
+    width: 100%;
+}
+
+.cardDescriptionWrapper {
+    /* background-color: purple; */
+    width: 100%;
+    height: 100%;
+}
+
+.successCardTitle {
+    color: #0C53A0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card1ReadMore {
+    display: none;
+    margin-top: 1rem;
+}
+
+.cardContent {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.successCardDescription {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#0C53A0;
+    text-align: center;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* Acestea trebuiesc schimbate in cazul in care se modifica continutul cardurilor */
+
+#roboChallangeImg {
+    background: url("../pics/pics_index/pics_header/header_robochallange.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5% 45%;
+}
+
+#aleargaPentruViataImg {
+    background: url("../pics/pics_index/pics_header/header_aleargapentruviata.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 4% 30%;
+}
+
+#moiblProImg {
+    background: url("../pics/pics_index/pics_header/header_mobilpro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5% 70%;
+}
+
+.successImageWrapper {
+    background-color: red;
+    height: 15rem;
+    width: 100%;
+}
+
+.successButton {
+    background-color: #0C53A0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.successButton:hover {
+    background-color: white;
+    color:#0C53A0;
+    cursor: pointer;
+    box-shadow: 0 0 0 .2rem #0C53A0;
+}
+
+.successButton:active {
+    background-color: #3697fe;
+    color: white;
+}
+
+.successTitle {
+    font-size: 2rem;
+    color:#0C53A0;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    margin-top: -1rem;
+}
+
+.mobileSucTitle {
+    display: none;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .successSection {
+        height: 80rem;
+    }
+    .successWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .successTitle {
+        margin-top: 5rem;
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 727px) {
+    .successSection {
+        height: 125rem;
+    }
+    .successWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .desktopSucTitle {
+        display: none;
+    }
+
+    .mobileSucTitle {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media screen and (max-widtH: 370px) {
+    .successCard {
+        width: 85%;
+    }
+
+    .successTitle {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-widtH: 330px) {
+    .successTitle {
+        font-size: 1.4rem;
+    }
+}
+
+/*end of fixing success section*/
+
+
+/*fixing stundetia section*/
+
+@media screen and (max-width: 450px) {
+    .studentiaSection h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .studentiaSection h1 {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .studentiaSection h1 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/*end of fixing stundetia section*/
+
+/* end of fixing until 320px */
 
 

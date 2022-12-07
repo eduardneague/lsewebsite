@@ -304,3 +304,25 @@ input[type = "submit"]:hover {
         line-height: 1.5rem;
     }
 }
+
+/*fixing until 320px*/
+
+@media screen and (max-width: 390px) {
+    .topPart h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .topPart h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .contactCard {
+        width: 16rem;
+    }
+}
+
+
+/*end of fixing until 320px*/

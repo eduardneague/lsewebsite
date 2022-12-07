@@ -133,6 +133,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 100%;
     width: 17rem;
     margin-top: .27rem;
+    margin-left: -.8rem;
     background: url("../pics/pics_index/general_pics/icon_logoNav.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -274,6 +275,7 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 6%;
     padding: 1rem;
   }
 
@@ -536,6 +538,75 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
+/*footer fixing*/ 
+
+@media screen and (max-width: 430px) {
+  .footerGridWrapper {
+    min-width: 30rem;
+    margin-left: -5rem;
+  }
+
+  .rightsBar {
+    min-width: 22rem;
+  }
+
+  .leftSideText, .rightSideText {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .footerGridWrapper {
+    min-width: 20rem;
+    margin-left: -11.5rem;
+  }
+
+  #gridBox1 {
+    margin-right: 3rem;
+  }
+
+  .rightsBar {
+    min-width: 17rem;
+  }
+
+  .leftSideText, .rightSideText {
+    font-size: .75rem;
+  }
+}
+
+  @media screen and (max-width: 378px) {
+    .footerGridWrapper {
+      min-width: 20rem;
+      margin-left: -10rem;
+    }
+  
+    #gridBox1 {
+      margin-right: 2rem;
+    }
+  
+    .rightsBar {
+      min-width: 17rem;
+    }
+  
+    .leftSideText, .rightSideText {
+      font-size: .75rem;
+    }
+}
 
 
 /* end of Footer */
+
+/* fixing bar for 320px */
+
+@media screen and (max-width: 400px) {
+  .navLogo {
+    background: url("../Design/icon_logoLSEblue.svg");
+    background-repeat: no-repeat;
+    background-size: 35% auto;
+    margin-top: -.1rem;
+    margin-left: -1.5rem;
+  }
+}
+  
+
+/* fixing bar for 320px */

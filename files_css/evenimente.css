@@ -529,3 +529,36 @@
 
 
 /* end of responsive stuff */
+
+/*fixing until 320px*/
+
+@media screen and (max-width: 370px) {
+    .eventCard {
+        width: 80%;
+        justify-self: center;
+        height: 40rem;
+    }
+
+    .eventLogo {
+        margin-top: -3rem;
+        margin-left: 6.5rem;
+    }
+
+    .alteEvenimente {
+        height: 420rem;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .infoSection {
+        height: 265rem;
+    }
+}
+
+@media screen and (max-width: 347px) {
+    .infoSection {
+        height: 270rem;
+    }
+}
+
+/*end of fixing until 320px*/
